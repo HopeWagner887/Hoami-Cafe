@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HOAMI CAFE</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F7F7F2;
+}
+
+.top-bar{
+    width: 100%;
+    height: 8px;
+    background-color: #7A9E7E;
+}
+
+.header{
+    width: 100%;
+    height: 95px;
+    background-color: #F7F7F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+.logo-section{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #7A9E7E;
+}
+
+.logo-section h1{
+    font-size: 28px;
+    color: #1F1F1F;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.navbar{
+    display: flex;
+    gap: 35px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #1F1F1F;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    padding: 8px 14px;
+    border-radius: 30px;
+}
+
+.navbar a:hover{
+    background-color: #7A9E7E;
+    color: white;
+}
+
+.hero-section{
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.hero-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text{
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #F7F7F2;
+}
+
+.hero-text h2{
+    font-size: 45px;
+    color: #1F1F1F;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 35px;
+}
+
+.hero-btn{
+    text-decoration: none;
+    background-color: #7A9E7E;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 35px;
+    font-weight: 500;
+}
+
+/* MENU SECTION */
+.menu-section{
+    background-color: #4f4e4e;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.menu-title{
+    font-size: 34px;
+    color: #7A9E7E;
+    margin-bottom: 40px;
+}
+
+.menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    padding: 14px 18px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.05);
+}
+
+.menu-item img{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.menu-name{
+    color: white;
+    font-weight: 500;
+}
+
+.price{
+    color: #7A9E7E;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+@media(max-width: 900px){
+
+.header{
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+}
+
+.navbar{
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero-text h2{
+    font-size: 32px;
+}
+
+.hero-text p{
+    font-size: 15px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="top-bar"></div>
+
+<header class="header">
+
+    <div class="logo-section">
+        <img src="Logo.png" alt="HOAMI Logo" class="logo">
+        <h1>HOAMI CAFE</h1>
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="Findastore.html">Find a Store</a>
+    </nav>
+
+</header>
+
+<section class="hero-section">
+    <img src="coffee_and_bean_splash.jpg" alt="Matcha Coffee">
+</section>
+
+<section class="hero-text">
+
+    <h2>Fresh Coffee Moments</h2>
+
+    <p>
+        Welcome to HOAMI CAFE where modern minimalism meets
+        handcrafted coffee and matcha experiences.
+    </p>
+
+    <a href="https://www.starbucks.co.za/" target="_blank" class="hero-btn">View Menu</a>
+
+</section>
+
+<section class="menu-section">
+
+    <div class="menu-title">Our Popular Choices</div>
+
+    <div class="menu-list">
+
+        <a href="index.html" class="menu-item">
+            <img src="matcha.jpg">
+            <span class="menu-name">Matcha</span>
+            <span class="price">R45</span>
+        </a>
+
+        <a href="index.html" class="menu-item">
+            <img src="boba_tea.jpg">
+            <span class="menu-name">Boba Tea</span>
+            <span class="price">R50</span>
+        </a>
+
+        <a href="index.html" class="menu-item">
+            <img src="coffee.jpg">
+            <span class="menu-name">Brewed Coffee</span>
+            <span class="price">R40</span>
+        </a>
+
+        <a href="index.html" class="menu-item">
+            <img src="croissant.jpg">
+            <span class="menu-name">Stuffed Croissant</span>
+            <span class="price">R35</span>
+        </a>
+
+        <a href="index.html" class="menu-item">
+            <img src="muffins.jpg">
+            <span class="menu-name">Muffins</span>
+            <span class="price">R30</span>
+        </a>
+
+        <a href="index.html" class="menu-item">
+            <img src="cheesecake.jpg">
+            <span class="menu-name">Cheesecake Slices</span>
+            <span class="price">R55</span>
+        </a>
+
+    </div>
+
+</section>
+
+</body>
+</html>

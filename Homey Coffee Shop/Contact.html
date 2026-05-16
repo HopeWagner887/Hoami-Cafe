@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact HOAMI CAFE</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:#F7F7F2;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 70px;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    border:2px solid #7A9E7E;
+}
+
+.logo h1{
+    font-size:24px;
+}
+
+.back-btn{
+    padding:10px 20px;
+    background:#7A9E7E;
+    color:white;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+/* CONTACT SECTION */
+.contact-section{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.contact-section h1{
+    font-size:42px;
+    color:#7A9E7E;
+    margin-bottom:20px;
+}
+
+.contact-section p{
+    font-size:18px;
+    color:#555;
+    line-height:1.8;
+    max-width:700px;
+    margin:auto;
+}
+
+.contact-box{
+    margin-top:40px;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    max-width:500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.contact-box input,
+.contact-box textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-family:'Poppins';
+}
+
+.contact-box button{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#7A9E7E;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:500;
+}
+
+.contact-box button:hover{
+    background:#5f7f63;
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="logo">
+<img src="Logo.png">
+<h1>HOAMI CAFE</h1>
+</div>
+
+<a href="index.html" class="back-btn">Back to Home</a>
+
+</header>
+
+<section class="contact-section">
+
+<h1>Contact Us</h1>
+
+<p>
+We would love to hear from you!  
+Reach out for bookings, feedback, or general enquiries.
+</p>
+
+<div class="contact-box">
+
+<input type="text" id="name" placeholder="Your Name">
+<input type="email" id="email" placeholder="Your Email">
+<textarea rows="5" id="message" placeholder="Your Message"></textarea>
+
+<button onclick="sendMessage()">Send Message</button>
+
+</div>
+
+</section>
+
+<script>
+function sendMessage(){
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    if(name === "" || email === "" || message === ""){
+        alert("Please fill in all fields before sending.");
+        return;
+    }
+
+    alert("Email sent successfully! We will get back to you soon.");
+}
+</script>
+
+</body>
+</html>
